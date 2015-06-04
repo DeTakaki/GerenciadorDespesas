@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#000000">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_marginTop="43dp"
+        android:hint="Nome"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/editText6"
+        android:layout_alignStart="@+id/editText6"
+        android:gravity="center"
+        android:hint="Valor" />
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_below="@+id/editText5"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_alignRight="@+id/editText5"
+        android:layout_alignEnd="@+id/editText5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_below="@+id/spinner2"
+        android:layout_centerHorizontal="true"
+        android:hint="Data"
+        android:gravity="center" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner3"
+        android:layout_below="@+id/editText6"
+        android:layout_alignLeft="@+id/button14"
+        android:layout_alignStart="@+id/button14"
+        android:layout_alignRight="@+id/button14"
+        android:layout_alignEnd="@+id/button14" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#56a8da"
+        android:textColor="#ffffff"
+        android:text="@string/inserir_excluir_categoria"
+        android:id="@+id/button14"
+        android:layout_below="@+id/spinner3"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickInserirExcluir" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="270px"
+        android:layout_height="100px"
+        android:backgroundTint="#56a8da"
+        android:textColor="#ffffff"
+        android:text="@string/buttom_cancelar"
+        android:id="@+id/button15"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickButtonCancel" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="270px"
+        android:layout_height="100px"
+        android:backgroundTint="#56a8da"
+        android:textColor="#ffffff"
+        android:text="@string/buttom_salvar"
+        android:id="@+id/button16"
+        android:clickable="true"
+        android:onClick="onClickSalvarDados"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_receita"
+        android:textColor="#ffffff"
+        android:id="@+id/radioButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_despesa"
+        android:textColor="#ffffff"
+        android:id="@+id/radioButton2"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button16"
+        android:layout_alignStart="@+id/button16"
+        android:layout_alignParentRight="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_evento_previsto"
+        android:layout_marginTop="10px"
+        android:id="@+id/radioButton3"
+        android:layout_below="@+id/button14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_parcelas"
+        android:id="@+id/parcela"
+        android:checked="false"
+        android:layout_below="@+id/radioButton3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/parcelas"
+        android:layout_alignBottom="@+id/parcela"
+        android:layout_toRightOf="@+id/parcela"
+        android:layout_toEndOf="@+id/parcela"
+        android:text="@string/parcelas" />
+
+</RelativeLayout>

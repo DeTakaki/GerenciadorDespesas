@@ -2,5 +2,45 @@
     <string name="app_name">Gerenciador de Despesas</string>
 
     <string name="hello_world">Hello world!</string>
+
     <string name="action_settings">Settings</string>
+
+    <string name="radio_receita">Receita</string>
+
+    <string name="radio_despesa">Despesa</string>
+
+    <string name="radio_evento_previsto">Evento Previsto</string>
+
+    <string name="nome">Nome</string>
+
+    <string name="valor">Valor</string>
+
+
+    -<string-array name="modoDePagamento">
+
+    <item>Boleto</item>
+
+    <item>Cheque</item>
+
+    <item>Crédito</item>
+
+    <item>Débito</item>
+
+    <item>Dinheiro</item>
+
+</string-array>
+
+    <string name="inserir_excluir_categoria">Inserir ou Remover Categorias</string>
+
+    <string name="descricao">Pequena descrição da receita ou despesa</string>
+
+    <string name="previsao">Evento Previsto</string>
+
+    <string name="radio_parcelas">Parcelado</string>
+
+    <string name="parcelas">1</string>
+
+    <string name="buttom_cancelar">Cancelar</string>
+
+    <string name="buttom_salvar">Salvar</string>
 </resources>
