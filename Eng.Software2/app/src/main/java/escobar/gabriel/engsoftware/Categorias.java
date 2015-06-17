@@ -10,8 +10,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import br.ufms.gerenciadordedespesas.R;
-
 
 public class Categorias extends ActionBarActivity {
 
@@ -22,9 +20,9 @@ public class Categorias extends ActionBarActivity {
         setContentView(R.layout.activity_categorias);
 
 
-        if(getIntent().hasExtra("categoria")){
+       /* if(getIntent().hasExtra("categoria")){
             String categoria = getIntent().getExtras().getString("categoria");
-            escobar.gabriel.engsoftware.RegistrarFinancas.categorias.add(categoria);
+            RegistrarFinancas.categorias.add(categoria);
             Toast.makeText(this,"Categoria "+categoria+" adicionada",Toast.LENGTH_SHORT).show();
         }
         if(getIntent().hasExtra("position")){
@@ -35,7 +33,7 @@ public class Categorias extends ActionBarActivity {
                 RegistrarFinancas.categorias.remove(pos);
                 Toast.makeText(this,"Categoria "+name+" removida",Toast.LENGTH_SHORT).show();
             }
-        }
+        }*/
 
     }
 
@@ -48,17 +46,19 @@ public class Categorias extends ActionBarActivity {
     public void onClickInserirCategoria(View view){
         Intent intent = new Intent(this,InserirCategoria.class);
         startActivity(intent);
+        finish();
     }
 
     public void onClickButtonExcluirCategoria(View view){
         Intent intent = new Intent(this,ExcluirCategorias.class);
         startActivity(intent);
+        finish();
     }
 
     public void onClickButtonVoltar(View v){
-
-       Intent a = new Intent(this,RegistrarFinancas.class);
-        startActivity(a);
+        finish();
+       /*Intent a = new Intent(this,RegistrarFinancas.class);
+        startActivity(a);*/
 
     }
     @Override

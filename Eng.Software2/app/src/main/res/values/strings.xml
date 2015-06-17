@@ -1,0 +1,50 @@
+<resources>
+    <string name="filtro">Filtro: </string>
+    <string name="app_name">Eng. Software</string>
+    <string name="saldo_inicial">Saldo Inicial: </string>
+    <string name="parcelas">Parcelas</string>
+    <string name="informacoes">Informaçoes</string>
+    <string name="analise_anual">Analise Anual</string>
+    <string name="analise_mensal">Analise Mensal</string>
+    <string name="valor">Valor</string>
+    <string name="visualizar">Visualizar</string>
+    <string name="categoria">Categoria</string>
+    <string name="analise_tabela">Tabelas</string>
+    <string name="saldo_disponivel">Saldo Disponivel: </string>
+    <string name="receita">Receitas: </string>
+    <string name="despesa">Despesas: </string>
+    <string name="selecione_categoria">Selecione uma Categoria</string>
+    <string name="button_excluir">Excluir</string>
+    <string name="nome_categoria">Nome da Categoria</string>
+    <string name="button_inserir_dados_pessoais">Inserir Dados Pessoais</string>
+    <string name="button_registrar_financas">Registrar Finanças</string>
+    <string name="button_consultar_financas">Consultar Finanças</string>
+    <string name="button_analisar_financas">Analisar Finanças</string>
+    <string name="butom_salvar">Salvar</string>
+    <string name="butom_cancelar">Cancelar</string>
+    <string name="butom_inserir_categoria">Inserir Categoria</string>
+    <string name="butom_excluir_categoria">Excluir Categoria</string>
+    <string name="butom_voltar_categoria">Voltar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_excluir_categorias">Excluir Categorias</string>
+    <string name="title_activity_main">Tela Inicial</string>
+    <string name="title_activity_inserir_dados_pessoais">Inserir Dados Pessoais</string>
+    <string name="insira_nome">Insira Seu Nome: </string>
+    <string name="insira_sua_renda">Insira Sua Renda Mensal: </string>
+    <string name="title_activity_registrar_financas">Registrar Financas</string>
+    <string name="inserir_excluir_categoria">Inserir e Excluir Categoria</string>
+    <string name="radio_receita">Receita</string>
+    <string name="radio_despesa">Despesa</string>
+    <string name="radio_evento_previsto">Evento Previsto</string>
+    <string-array name="pagamento">
+        <item>Dinheiro</item>
+        <item>Cartão de Credito</item>
+        <item>Cartão de Debito</item>
+        <item>Cheque</item>
+    </string-array>
+    <string name="title_activity_consultar_financas">ConsultarFinancas</string>
+    <string name="title_activity_analisar_financas">analisar_financas</string>
+    <string name="title_activity_teste_cons">TesteCons</string>
+    <string name="title_activity_mostrar_dados">MostrarDados</string>
+</resources>

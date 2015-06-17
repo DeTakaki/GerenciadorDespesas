@@ -25,6 +25,7 @@
     <string name="radio_receita">Receita</string>
     <string name="radio_despesa">Despesa</string>
     <string name="radio_evento_previsto">Evento Previsto</string>
+    <string name="parcelas">Parcelas</string>
     <string-array name="pagamento">
         <item>Dinheiro</item>
         <item>Cartão de Credito</item>
