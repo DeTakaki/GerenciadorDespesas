@@ -1,23 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.ufms.gerenciadordedespesas" >
+    package="br.ufms.gerenciadordedespesas">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:name=".GerenciadorDeDespesasApplication">
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity
+            android:name=".Categorias"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".InserirCategoria" />
+        <activity
+            android:name=".ExcluirCategorias"
+            android:label="@string/title_activity_excluir_categorias"></activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data android:name="AA_DB_NAME" android:value="GerenciadorDeDespesas.db" />
-        <meta-data android:name="AA_DB_VERSION" android:value="1" />
+        <activity
+            android:name=".InserirDadosPessoais"
+            android:label="@string/title_activity_inserir_dados_pessoais"></activity>
+        <activity
+            android:name=".RegistrarFinancas"
+            android:label="@string/title_activity_registrar_financas"></activity>
+        <activity
+            android:name=".ConsultarFinancas"
+            android:label="@string/title_activity_consultar_financas"></activity>
+        <activity
+            android:name=".AnalisarFinancas"
+            android:label="@string/title_activity_analisar_financas"></activity>
+        <activity
+            android:name=".TesteCons"
+            android:label="@string/title_activity_teste_cons"></activity>
+        <activity
+            android:name=".MostrarDados"
+            android:label="@string/title_activity_mostrar_dados"></activity>
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="GerenciadorDeDespesas.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
     </application>
 
 </manifest>

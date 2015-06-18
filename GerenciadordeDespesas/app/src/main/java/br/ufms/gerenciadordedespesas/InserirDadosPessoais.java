@@ -23,6 +23,7 @@ public class InserirDadosPessoais extends ActionBarActivity {
         EditText value = (EditText)findViewById(R.id.editText3);
         String val = value.getText().toString().trim();
         String name = nome.getText().toString().trim();
+
         if(!val.matches("") && !name.matches("")){
             Double salario = Double.parseDouble(value.getText().toString().trim());
             boolean t =true;
@@ -36,10 +37,11 @@ public class InserirDadosPessoais extends ActionBarActivity {
                 }
             }
             if(t && j == name.length() && salario > 0){
-                Intent muda = new Intent(this,MainActivity.class);
+                //Intent muda = new Intent(this,MainActivity.class);
                 //MainActivity.usuario.Usuario(name,salario);
                 Toast.makeText(this,"Dados de usuario Salvos!",Toast.LENGTH_SHORT);
-                startActivity(muda);
+                //startActivity(muda);
+                finish();
             }
             else{
                 if(!t){
@@ -50,6 +52,9 @@ public class InserirDadosPessoais extends ActionBarActivity {
                 }
 
             }
+
+            Usuario usuario = new Usuario(name,salario);
+            usuario.save();
         }
         else if(name.matches("")){
             Toast.makeText(this,"Nenhum valor escrito em Nome! ",Toast.LENGTH_SHORT).show();

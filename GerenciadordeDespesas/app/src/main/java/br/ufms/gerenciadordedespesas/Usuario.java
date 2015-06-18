@@ -1,13 +1,15 @@
 package br.ufms.gerenciadordedespesas;
 
+import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
+import com.activeandroid.query.Select;
 
 /**
  * Created by Gabriel on 26/05/2015.
  */
 @Table(name = "Usuario")
-public class Usuario {
+public class Usuario extends Model {
 
     @Column(name = "nome")
     String nome;
@@ -56,5 +58,9 @@ public class Usuario {
 
     public boolean isUser(){
         return this.user;
+    }
+
+    public static Usuario getRandom() {
+        return new Select().from(Usuario.class).orderBy("RANDOM()").executeSingle();
     }
 }

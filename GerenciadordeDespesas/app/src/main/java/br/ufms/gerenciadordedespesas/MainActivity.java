@@ -1,17 +1,66 @@
 package br.ufms.gerenciadordedespesas;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+    private Usuario usuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        this.usuario = Usuario.getRandom();
+    }
+
+    public void onClickInserirDados(View v) {
+        if ((usuario == null)) {
+            Intent a = new Intent(this, InserirDadosPessoais.class);
+            startActivity(a);
+        } else {
+            Toast.makeText(this, "Ja existe um Usuario", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+    public void onClickRegistrarFinancas(View v) {
+        if ((usuario == null)) {
+            Toast.makeText(this, "E preciso cadastrar um usuario\nClique em inserir dados pessoais!", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent a = new Intent(this, RegistrarFinancas.class);
+            startActivity(a);
+        }
+    }
+
+    public void onClickConsultarFinancas(View v) {
+        if ((usuario == null)) {
+            Toast.makeText(this, "E preciso cadastrar um usuario\nClique em inserir dados pessoais!", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent a = new Intent(this, TesteCons.class);
+            startActivity(a);
+        }
+    }
+
+    public void onClickAnalisarFinancas(View v) {
+        if ((usuario == null)) {
+            Toast.makeText(this, "E preciso cadastrar um usuario\nClique em inserir dados pessoais!", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent a = new Intent(this, AnalisarFinancas.class);
+            startActivity(a);
+        }
     }
 
     @Override
