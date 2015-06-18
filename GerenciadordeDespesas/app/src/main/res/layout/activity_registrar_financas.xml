@@ -71,7 +71,7 @@
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:text="@string/buttom_cancelar"
+        android:text="@string/butom_cancelar"
         android:layout_width="500px"
         android:layout_height="150px"
         android:backgroundTint="#56a8da"
@@ -84,7 +84,7 @@
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:text="@string/buttom_salvar"
+        android:text="@string/butom_salvar"
         android:layout_width="500px"
         android:layout_height="150px"
         android:backgroundTint="#56a8da"
@@ -122,7 +122,7 @@
         android:layout_width="500px"
         android:textSize="40px"
         android:layout_height="wrap_content"
-        android:text="@string/radio_parcelas"
+        android:text="@string/parcelas"
         android:id="@+id/radioButton4"
         android:layout_below="@+id/radioButton3"
         android:layout_alignRight="@+id/radioButton3"

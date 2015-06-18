@@ -1,15 +1,30 @@
 package br.ufms.gerenciadordedespesas;
 
+import com.activeandroid.annotation.Column;
+import com.activeandroid.annotation.Table;
+
 /**
  * Created by Gabriel on 27/05/2015.
  */
+@Table(name = "Financas")
 public class Financas{
 
+    @Column(name = "categoria")
     String categoria;
+
+    @Column(name = "descricao")
     String descricao;
+
+    @Column(name = "evento_previsto")
     boolean eventoPrevisto;
+
+    @Column(name = "data")
     String data;
+
+    @Column(name = "modo_pagamento")
     String modoPagamento;
+
+    @Column(name = "valor")
     double valor;
 
 
@@ -21,7 +36,7 @@ public class Financas{
         this.modoPagamento = modoPagamento;
         this.valor = valor;
 
-        Usuario.changeSalario(valor);
+        setValor(valor);
 
     }
 
