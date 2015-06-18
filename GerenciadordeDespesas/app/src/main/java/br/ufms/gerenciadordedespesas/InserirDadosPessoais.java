@@ -1,4 +1,4 @@
-package escobar.gabriel.engsoftware;
+package br.ufms.gerenciadordedespesas;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -37,7 +37,7 @@ public class InserirDadosPessoais extends ActionBarActivity {
             }
             if(t && j == name.length() && salario > 0){
                 Intent muda = new Intent(this,MainActivity.class);
-                MainActivity.usuario.Usuario(name,salario);
+                //MainActivity.usuario.Usuario(name,salario);
                 Toast.makeText(this,"Dados de usuario Salvos!",Toast.LENGTH_SHORT);
                 startActivity(muda);
             }

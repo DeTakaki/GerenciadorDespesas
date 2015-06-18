@@ -123,7 +123,7 @@
         android:textSize="40px"
         android:layout_height="wrap_content"
         android:text="@string/radio_parcelas"
-        android:id="@+id/parcela"
+        android:id="@+id/radioButton4"
         android:layout_below="@+id/radioButton3"
         android:layout_alignRight="@+id/radioButton3"
         android:layout_alignEnd="@+id/radioButton3"
