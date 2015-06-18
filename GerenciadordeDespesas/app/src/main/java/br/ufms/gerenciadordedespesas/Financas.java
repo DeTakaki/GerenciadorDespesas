@@ -1,4 +1,4 @@
-package escobar.gabriel.engsoftware;
+package br.ufms.gerenciadordedespesas;
 
 /**
  * Created by Gabriel on 27/05/2015.

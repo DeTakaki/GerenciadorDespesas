@@ -1,4 +1,4 @@
-package escobar.gabriel.engsoftware;
+package br.ufms.gerenciadordedespesas;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;

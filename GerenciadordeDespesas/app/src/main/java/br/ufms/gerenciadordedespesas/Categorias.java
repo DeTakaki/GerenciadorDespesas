@@ -1,4 +1,4 @@
-package escobar.gabriel.engsoftware;
+package br.ufms.gerenciadordedespesas;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -24,7 +24,7 @@ public class Categorias extends ActionBarActivity {
 
         if(getIntent().hasExtra("categoria")){
             String categoria = getIntent().getExtras().getString("categoria");
-            escobar.gabriel.engsoftware.RegistrarFinancas.categorias.add(categoria);
+            RegistrarFinancas.categorias.add(categoria);
             Toast.makeText(this,"Categoria "+categoria+" adicionada",Toast.LENGTH_SHORT).show();
         }
         if(getIntent().hasExtra("position")){
